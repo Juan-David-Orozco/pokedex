@@ -11,6 +11,6 @@ app.use(cors());
 app.use(express.json());
 
 // routes
-
+app.use('/api/pokedex', require('./routes/pok_routes'))
 
 module.exports = app;
